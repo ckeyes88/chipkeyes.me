@@ -26,7 +26,6 @@ class Thoughts extends Component {
     
     return (
       <div id="articles">
-        <h1>Hello</h1>
         {this.renderArticles()}
       </div>
     )
