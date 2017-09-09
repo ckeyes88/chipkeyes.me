@@ -1,0 +1,92 @@
+////////////////////////////////////////
+//      Font-Family Definitions       //
+////////////////////////////////////////
+
+$helvetica= 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+
+@font-face{
+  font-family: Robofan;
+  font-style: normal;
+  src: url(/fonts/Robofan.otf);
+}
+
+@font-face{
+  font-family: Robo;
+  font-style: normal;
+  src: url(/fonts/Robo.ttf);
+}
+
+@font-face{
+  font-family: Twofold;
+  font-style: normal;
+  src: url(/fonts/Twofold.ttf);
+}
+
+@font-face{
+  font-family: Sharp;
+  font-style: normal;
+  src: url(/fonts/Sharp/Sharp.otf);
+}
+
+@font-face{
+  font-family: Decotech;
+  font-style: normal;
+  src: url(/fonts/DecoTech.ttf);
+}
+
+@font-face{
+  font-family: EleganTech;
+  font-style: normal;
+  src: url(/fonts/EleganTech.ttf);
+}
+
+@font-face{
+  font-family: Slabs;
+  font-style: normal;
+  src: url(/fonts/Slabs.otf);
+}
+
+@font-face{
+  font-family: Skandar;
+  font-style: normal;
+  src: url(/fonts/Skandar/Skandar.otf);
+}
+
+@font-face{
+  font-family: Slanted;
+  font-style: normal;
+  src: url('/fonts/Slanted/slanted\ ITALIC\ shift.otf');
+}
+
+@font-face{
+  font-family: Web;
+  font-style: normal;
+  src: url('/fonts/WebServer.ttf');
+}
+///////////////////////////////
+//      Font Variables       //
+///////////////////////////////
+$display-font= $helvetica;
+$display-font--bold= $helvetica;
+$body-font= $helvetica;
+
+////////////////////////////
+//      Font Mixins       //
+////////////////////////////
+displayFontBold() {
+  font-family: $display-font--bold;
+  font-weight: 500;
+  color: $display-color;
+}
+
+displayFont() {
+  font-family: $display-font;
+  font-weight: 400;
+  color: $display-color;
+}
+
+bodyFont() {
+  font-family: $body-font;
+  font-weight: 400;
+  color: $body-color;
+}

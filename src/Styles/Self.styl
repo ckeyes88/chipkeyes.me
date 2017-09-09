@@ -1,0 +1,67 @@
+.self {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: rem(16); // Rem Calc Function
+  padding: rem(16);
+  text-align: center;
+  height: 100%;
+  font-family: Web;
+  h3 {
+    font-weight: bold;
+    font-size: rem(30);
+  }
+  #profile {
+    filter: drop-shadow(2px 2px 2px $black);
+    margin: rem(15);
+  }
+  #bio {
+    background: rgba($gray--200, 0.7);
+    overflow-y: auto;
+    margin: rem(20);
+    padding: rem(20);
+    max-width: 75%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    scroll-y: auto;
+    p {
+      font-weight: bold;
+      margin: rem(10);
+      text-align: justify;
+      font-size: rem(22);
+    } // &:nth-child(odd) h3 {
+    //     align-self: flex-end;
+    // }
+    // &:nth-child(even) h3 {
+    //     align-self: flex-start;
+    // }
+    // p {
+    //   text-align: left;
+    // }
+  }
+  #skills {
+    // background: rgba($gray--050, 0.6);
+    // filter: drop-shadow(1px 1px 1px $black);
+    overflow-y: auto;
+    scroll-y: auto;
+    margin: rem(10);
+    padding: rem(10);
+    max-width: 75%;
+    width: 75%;
+    display: flex;
+    flex-direction: column; // justify-content: space-around;
+    ul {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center; // flex-wrap: wrap
+      margin: rem(10);
+      li {
+        font-size: rem(24);
+        margin: rem(2);
+      }
+    }
+  }
+}

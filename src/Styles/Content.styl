@@ -1,0 +1,57 @@
+.content {
+  display: flex;
+  margin-top: rem(75);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: rem(16);                                          // Rem Calc Function
+  padding: rem(16);
+  text-align: center;
+  height: 100%;
+  font-family: Web;
+
+  h1 {
+    margin: 30px;
+    font-size: rem(50);
+  }
+
+  h2 {
+    margin: rem(20);
+    font-size: rem(40);
+  }
+
+  h3 {
+    margin: rem(10);
+    font-size: rem(30);
+    font-weight: lighter;
+  }
+
+  #social {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    li {
+      margin: rem(15);
+      
+      a {
+        line-height: 0; 
+        font-size: 0;
+        color: transparent; 
+        .icon {
+          height: rem(30);
+          width: rem(30);
+          transition: transform 0.3s cubic-bezier(0.5, -0.5, 0.5, 1.5);
+          color: $black;
+          &:hover{
+            transform: scale(1.2);
+            transition: transform 0.3s cubic-bezier(0.5, -0.5, 0.5, 1.5);
+          }
+
+        }
+
+        
+      }
+    }
+  }
+}
