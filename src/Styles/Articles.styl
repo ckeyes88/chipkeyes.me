@@ -4,7 +4,7 @@
   overflow-y: auto;
 
   .article {
-  filter: drop-shadow(10px 10px 10px rgba(0,0,0, 0.25));
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0, 0.25));
     border-radius: rem(0.25);
     display: flex;
     // height: rem(400);
@@ -36,10 +36,16 @@
     }
 
     .article-info {
-      background-color: $black;
-      height: rem(75)
-      color: $white
-      
+      background-color: $gray--500;
+      height: rem(100);
+      color: $black;
+      padding: rem(15);
+      text-align: justify;
+      a {
+        font-size: rem(26);
+        text-decoration: none;
+        
+      }
     }
   }
 }

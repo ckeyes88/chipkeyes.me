@@ -13,6 +13,6 @@ phases:
   build:
     commands:
     - npm run build
-artifacts:
-  files:
-    - build/**/*
+  post-build:
+    commands:
+    - aws s3 sync build/**/* http://chipkeyes-me.s3-website-us-west-2.amazonaws.com
