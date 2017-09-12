@@ -15,7 +15,7 @@ export default class Landing extends React.Component {
         <Logo 
           height={125} 
           width={125}/>
-        <h1>CHIP KEYES - REBUILD</h1>
+        <h1>CHIP KEYES</h1>
         <ul id="social">
           <li><a href="https://www.linkedin.com/in/cchipkeyes/" aria-label="External link to Linkedin account"><Icon className="icon" name="linkedin"/></a></li>
           <li><a href="https://github.com/ckeyes88" aria-label="External link to Github profile"><Icon className="icon" name="github"/></a></li>
