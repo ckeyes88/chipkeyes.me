@@ -15,4 +15,4 @@ phases:
     - npm run build
   post_build:
     commands:
-    - aws s3 sync build/**/* http://chipkeyes-me.s3-website-us-west-2.amazonaws.com
+    - aws s3 sync build s3://chipkeyes-me.s3-website-us-west-2.amazonaws.com
